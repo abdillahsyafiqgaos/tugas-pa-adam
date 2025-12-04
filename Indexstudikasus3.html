@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BukuKita - Toko Buku Online</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px auto;
+      max-width: 700px;
+      color: #222;
+      line-height: 1.5;
+    }
+    h1 { color: #000; }
+    h3 { color: #333; margin-bottom: 5px; }
+    nav a {
+      text-decoration: none;
+      color: #0056b3;
+      margin: 0 5px;
+    }
+    nav a:hover { text-decoration: underline; }
+    hr { margin: 16px 0; }
+    form { margin-top: 15px; }
+    label { display: block; margin-top: 10px; }
+    input[type=text], input[type=email], textarea, select {
+      width: 100%; padding: 6px; margin-top: 4px;
+      border: 1px solid #ccc; border-radius: 4px;
+    }
+    input[type=submit] {
+      margin-top: 12px; background-color: #0056b3;
+      color: white; border: none; padding: 8px 16px;
+      border-radius: 4px; cursor: pointer;
+    }
+    input[type=submit]:hover { background-color: #003f80; }
+  </style>
+</head>
+<body>
+
+  <h1>Selamat Datang di BukuKita!</h1>
+  <h3>Toko Buku Online Terlengkap</h3>
+
+  <nav>
+    <a href="Berandastudikasus3.html">Beranda</a> |
+    <a href="Katalogstudikasus3.html">Katalog</a> |
+    <a href="Promostudikasus3.html">Promo</a> |
+    <a href="Tentangstudikasus3.html">Tentang Kami</a> |
+    <a href="Kontakstudikasus3.html">Kontak</a>
+  </nav>
+
+  <hr>
+
+  <h2>Tentang Kami</h2>
+  <p>
+    BukuKita adalah toko buku online yang didirikan sejak tahun 2020 dengan misi untuk menyebarkan literasi ke seluruh penjuru Indonesia.
+    Kami percaya bahwa buku adalah jendela dunia, dan kami berkomitmen untuk menyediakan akses mudah dan terjangkau bagi siapa pun yang
+    haus akan ilmu pengetahuan.
+  </p>
+  <p>
+    Visi kami adalah menjadi platform toko buku online terdepan di Indonesia yang inovatif dan terpercaya.
+  </p>
+
+  <h2>Hubungi Kami</h2>
+ <form action="#" method="post">
+  <label for="nama">Nama Lengkap:</label>
+  <input type="text" id="nama" name="nama" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="telepon">Nomor Telepon:</label>
+  <input type="text" id="telepon" name="telepon">
+
+  <label for="topik">Topik Pesan:</label>
+  <select id="topik" name="topik">
+    <option value="umum">Pertanyaan Umum</option>
+    <option value="kerjasama">Kerjasama</option>
+    <option value="keluhan">Keluhan</option>
+  </select>
+
+  <label for="pesan">Pesan Anda:</label>
+  <textarea id="pesan" name="pesan" rows="4"></textarea>
+
+  <p>Bagaimana Anda Mengetahui Kami? (Pilih satu)</p>
+  <div class="radio-group">
+    <label><input type="radio" name="sumber" value="media"> Media Sosial</label>
+    <label><input type="radio" name="sumber" value="pencari"> Mesin Pencari</label>
+    <label><input type="radio" name="sumber" value="teman"> Rekomendasi Teman</label>
+  </div>
+
+  <div class="checkbox-group">
+    <label><input type="checkbox" id="setuju" name="setuju"> Setuju Syarat & Ketentuan</label>
+  </div>
+
+  <input type="submit" value="Kirim Pesan">
+</form>
+
+</body>
+</html>
